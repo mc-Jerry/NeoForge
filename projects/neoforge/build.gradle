@@ -347,7 +347,7 @@ configurations {
         //if (!rootProject.isPreReleaseVersion) {
             //javaComponent.addVariantsFromConfiguration(it) {}
         //}
-    }
+    //}
     modDevApiElements {
         canBeResolved = false
         canBeConsumed = true
