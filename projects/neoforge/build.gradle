@@ -336,17 +336,17 @@ configurations {
         // Publish it
         javaComponent.addVariantsFromConfiguration(it) {}
     }
-    changelog {
-        canBeResolved = false
-        canBeConsumed = true
-        attributes {
-            attribute(Category.CATEGORY_ATTRIBUTE, objects.named(Category, Category.DOCUMENTATION))
-            attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, "changelog"))
-        }
+    //changelog {
+        //canBeResolved = false
+        //canBeConsumed = true
+        //attributes {
+            //attribute(Category.CATEGORY_ATTRIBUTE, objects.named(Category, Category.DOCUMENTATION))
+            //attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, "changelog"))
+        //}
         // Publish it, but only for release versions
-        if (!rootProject.isPreReleaseVersion) {
-            javaComponent.addVariantsFromConfiguration(it) {}
-        }
+        //if (!rootProject.isPreReleaseVersion) {
+            //javaComponent.addVariantsFromConfiguration(it) {}
+        //}
     }
     modDevApiElements {
         canBeResolved = false
