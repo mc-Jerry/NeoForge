@@ -12,10 +12,10 @@ plugins {
 
 gradleutils.setupSigning(project: project, signAllPublications: true)
 
-changelog {
-    from '21.0'
-    disableAutomaticPublicationRegistration()
-}
+//changelog {
+    //from '21.0'
+    //disableAutomaticPublicationRegistration()
+//}
 
 dynamicProject {
     runtime("${project.minecraft_version}-${project.neoform_version}",
